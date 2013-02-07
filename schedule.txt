@@ -1,0 +1,74 @@
+PyCon Taiwan 2013 Tutorial
+
+Justin Lin
+
+Type:Tutorial
+Audience level:Novice
+Category:Core Python and Ecosystem (Language, Libraries, Culture)
+(May ?th ? a.m. – ? p.m.)
+
+Description
+
+Understanding cultures and ecosystem of a language takes me about three to six months. This six-hour course wraps up what I - an experienced Java developer - have learned from Python ecosystem and the agenda of the past PyConTW.
+
+Abstract
+
+The tutorial works like this: There's a short presentation. A short lab for you to complete. Rinse/repeat until we run out of time. Hopefully you'll walk away from this tutorial knowing the core and ecosystem of Python.
+
+Course will cover:
+
+Picking and installing an Interpreter
+Introduction to Unicode support
+Basic Input and Output
+Built-in Types
+if, for, while and for Comprehensions
+Functions, Modules, Classes and Packages
+The Community
+Documentation
+Data Management Functions
+Object serialization
+Database
+Django
+Test
+...
+
+There are short labs to allow participants to practice concepts.
+
+=================================================================
+
+PyCon Taiwan 2013 入門課程
+
+林信良
+
+課程種類：入門
+學員程度：初學者
+課程分類：Python 核心與生態（語言、程式庫與文化）
+五月 ? 日 早上 ?  – 下午 ?
+
+說明：
+
+以我來說，瞭解一個語言的文化與生態大概要花三到六個月的時間。作為一個熟知Java領域的開發者，這六個小時的入門課程，將呈現我至今對Python生態與過去PythonConTW議程的瞭解過程與心得。
+
+進行方式：
+
+透過投影片進行簡要說明與介紹，而後進行實作，以此模式不斷進行直到課程結束。希望學員在課程結束之後，能對Python的核心文化與生態能有所瞭解。
+
+涵蓋內容：
+
+Python版本的選擇與安裝
+簡介Unicode支援
+基本輸入輸出
+內建型態
+if、for、while與for Comprehensions
+函數、模組、類別與套件
+社群
+文件
+資料處理函式
+物件序列化
+資料庫程式
+Django
+測試
+...
+
+課程穿插頻繁實作，讓學員從實作中驗證觀念。
+

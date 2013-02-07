@@ -1,0 +1,4 @@
+wget https://www.djangoproject.com/download/1.5c1/tarball/
+tar xzvf Django-1.5c1.tar.gz
+cd Django-1.5c1
+sudo python setup.py install

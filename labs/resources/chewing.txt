@@ -1,0 +1,2 @@
+sudo apt-get install scim scim-chewing; sudo im-switch -s scim-bridge
+ibus-setup

@@ -1,0 +1,19 @@
+Justin Lin
+
+Be famous for "The Caterpillar’s Gossip" (openhome.cc); currently a freelancer; professional in technical writing and training. Enjoy studying programming languages, frameworks and communities; learn designs, paradigms and cultures from them. Writing what he’s learned occupies most of the leisure time. Online documentation covers areas about C/C + +, Java, Scala, Ruby / Rails, Python, JavaScript, etc.
+
+Web site:   openhome.cc
+Twitter:    twitter.com/caterpillar
+Facebook:   www.facebook.com/openhome.cc
+Linkedin:   www.linkedin.com/in/caterpillar
+
+=================================================================
+
+林信良
+
+因在網路上經營「良葛格學習筆記」（openhome.cc）而聞名，目前為自由工作者，專長為技術寫作與教育訓練。喜好研究程式語言、框架與社群，從中學習設計、典範及文化。閒暇之餘記錄所學，技術文件涵蓋 C/C++、Java、Ruby/Rails、Python、JavaScript 等多個領域。
+
+Web site:   openhome.cc
+Twitter:    twitter.com/caterpillar
+Facebook:   www.facebook.com/openhome.cc
+Linkedin:   www.linkedin.com/in/caterpillar
