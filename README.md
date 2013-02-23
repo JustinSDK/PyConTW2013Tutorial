@@ -13,7 +13,7 @@ Table of Content
      * Implementations
      * Preparing Course Environment
      * Where’re My Libraries?
-     * What’s the Relationship among distutils, Distribute and Pip?
+     * What’s the Relationship among Distutils, Distribute and Pip?
   * Hello! World!
      * Introduction to Unicode Support
      * Basic Input and Output
