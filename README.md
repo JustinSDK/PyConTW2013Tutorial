@@ -9,11 +9,11 @@ Table of Content
 ----------------
 * The 1st class
   * Preface
-  * Picking and installing an Interpreter
+  * Picking and Installing an Interpreter
      * Implementations
-     * Preparing course environment
-     * Where’re my libraries?
-     * What’s the relationship among distutils, Distribute and Pip?
+     * Preparing Course Environment
+     * Where’re My Libraries?
+     * What’s the Relationship among distutils, Distribute and Pip?
   * Hello! World!
      * Introduction to Unicode Support
      * Basic Input and Output
