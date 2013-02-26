@@ -94,4 +94,20 @@ Table of Content
 
 ***
 
+* The 6th class
+  * unittest（Testing Continued）
+     * Test Case
+     * Test Fixture
+     * Test Suite
+     * Test Runner
+  * Profiling
+     * timeit
+     * cProfile（profile） 
+  * PyCon Taiwan
+     * PyCon Taiwan 2012
+     * PyCon Taiwan 2013
+  * References
+
+***
+
 http://openhome.cc
