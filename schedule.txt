@@ -5,7 +5,7 @@ Justin Lin
 Type:Tutorial
 Audience level:Novice
 Category:Core Python and Ecosystem (Language, Libraries, Culture)
-(May ?th ? a.m. – ? p.m.)
+(May 24th 09:00 – 17:00)
 
 Description
 
@@ -43,7 +43,7 @@ PyCon Taiwan 2013 入門課程
 課程種類：入門
 學員程度：初學者
 課程分類：Python 核心與生態（語言、程式庫與文化）
-五月 ? 日 早上 ?  – 下午 ?
+5 月 24 日 09:00 – 17:00
 
 說明：
 

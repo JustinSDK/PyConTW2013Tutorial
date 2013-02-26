@@ -1,6 +1,6 @@
 Justin Lin
 
-Be famous for "The Caterpillar・s Gossip" (openhome.cc); currently a freelancer; professional in technical writing and training. Enjoy studying programming languages, frameworks and communities; learn designs, paradigms and cultures from them. Writing what he・s learned occupies most of the leisure time. Online documentation covers areas about C/C + +, Java, Scala, Ruby / Rails, Python, JavaScript, etc.
+Is famous for "The Caterpillar・s Gossip" (openhome.cc); currently a freelancer; professional in technical writing and training. Enjoy studying programming languages, frameworks and communities; learn designs, paradigms and cultures from them. Writing what he・s learned occupies most of the leisure time. Online documentation covers areas about C/C + +, Java, Scala, Ruby / Rails, Python, JavaScript, etc.
 
 Web site:   openhome.cc
 Twitter:    twitter.com/caterpillar
