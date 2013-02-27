@@ -1,0 +1,2 @@
+sudo apt-get install git
+git clone https://github.com/JustinSDK/PyConTW2013Tutorial.git
