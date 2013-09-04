@@ -7,6 +7,8 @@ The [PyConTW](http://tw.pycon.org) organizer wishes to improve the quality and q
 
 Watch [PyCon Taiwan 2013 Tutorial online](http://www.slideshare.net/JustinSDK/pycon-taiwan-2013-tutorial).
 
+You can find the Traditional-Chinese edition of this tutorial in [CodeData](http://www.codedata.com.tw/python/python-tutorial-the-1st-class-1-preface).
+
 Table of Content
 ----------------
 * The 1st class
