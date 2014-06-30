@@ -822,7 +822,7 @@ else:
 
 ```python
 from sys import argv
-print 'Hello, ' + (argv[1]) if len(argv) > 1 else 'Guest')
+print 'Hello, ' + (argv[1] if len(argv) > 1 else 'Guest')
 ```
 
 Python 中的 `for` 可用來迭代循序結構的物件。例如想將某 `list` 的元素都做二次方運算，收集在另一個 `list` 中的話，可以如下：
