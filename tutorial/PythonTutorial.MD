@@ -182,14 +182,13 @@
 
 ![使用 Python 互動交談環境](images/python-tutorial-the-1st-class-2-2.jpg)
 
-### 練習 1：安裝 Distribute、Pip 與 Virtualenv
+### 練習 1：安裝 Setuptools、Pip 與 Virtualenv
 
-在 Python 標準程式庫中有個 `distutils`，是用來建立與安裝額外模組，適用於簡易的安裝場合，有些程式庫擴充了 `distutils`，像是 Distribute，可以使用以下的指令建立、進入 scripts 資料夾，然後下載、安裝 Distribute：
+在 Python 標準程式庫中有個 `distutils`，是用來建立與安裝額外模組，適用於簡易的安裝場合，有些程式庫擴充了 `distutils`，像是 Setuptools，可以使用以下的指令建立、進入 scripts 資料夾，然後下載、安裝 Distribute：
 
     $ mkdir scripts
     $ cd scripts
-    $ wget http://python-distribute.org/distribute_setup.py
-    $ sudo python distribute_setup.py
+    $ wget https://bootstrap.pypa.io/ez_setup.py -O - | sudo python
 
 安裝完成後，就有個 `easy_install` 指令可以使用，這個指令有一些問題，因而許多人建議廢棄它不要使用了，課程中會安裝它的替代品 `pip`：
 
@@ -395,7 +394,6 @@ for line in open(sys.argv[1], 'r'):
 
 實際上似乎是如此，在 Python 社群中也有討論過 [有沒有好的 Python IDE 呢？](https://www.facebook.com/groups/pythontw/permalink/10152008712448438/)
 
-有沒有好的 Python IDE 呢？
 第一堂課的內容就到這邊了，我們認識了 Python 環境的安裝與準備，寫了第一個 Python 程式，瞭解了一些 Unicode 支援，並看了些基本的 I/O，休息一下！後面要來進入第二堂課，瞭解更多 Python 語言的細節。
 
 ## 參考資源
@@ -906,7 +904,7 @@ set(['caterpillar', 'Justin', 'openhome'])
 >>>
 ```
 
-上例中的 `zip` 函式，就如名稱意義，會將兩個 `list` 像拉鏈一樣，兩兩相扣在一起為 `tuple`，這些 `tuple` 元素組成一個新的 `list`，對於 `tuple` 元素組成的這個 `list`，每個 tuple 中的一對元素再指定給 name 與 passwd，最後這對 name 與 passwd 組成 dict 的一對鍵值。
+上例中的 `zip` 函式，就如名稱意義，會將兩個 `list` 像拉鏈一樣，兩兩相扣在一起為 `tuple`，這些 `tuple` 元素組成一個新的 `list`，對於 `tuple` 元素組成的這個 `list`，每個 `tuple` 中的一對元素再指定給 `name` 與 `passwd`，最後這對 `name` 與 `passwd` 組成 `dict` 的一對鍵值。
 
 > 有些人剛接觸 Python 時，不太習慣 `for` 包含式的寫法，可以來看看 Haskell 中如何表達數學式 `S = { 2 . x | x ∈ N, x ≦ 10}`，Haskell 是寫為 `[2 * x | x <- N, x <= 10]` ，跟原本的數學式很相像，用這個方向來理解 Python 的 `for` 包括式，就比較能夠接受這樣的寫法。
 
@@ -1089,7 +1087,7 @@ class Account:
             self.name, self.number, self.balance)
 ```
 
-在 `Account` 類別中，`__init__` 定義了物件的初始流程，取代了原本的 `account` 函式，注意到每個類別中的函式（或說是方法），**首個參數「必定」接受物件本身，慣例上使用 self 名稱**，相當於其他程式語言中 `this` 的概念，你可以說這是 Python 中 **Explicit is better than implicit** 的哲學，不過其實這還有讓類別動態調有時更為方便的實際意義，這是進階議題，這六個小時的課程中就不談了，有機會看看 Python 的專門書籍，應該都會談到 ...
+在 `Account` 類別中，`__init__` 定義了物件的初始流程，取代了原本的 `account` 函式，注意到每個類別中的函式（或說是方法），**首個參數「必定」接受物件本身，慣例上使用 self 名稱**，相當於其他程式語言中 `this` 的概念，你可以說這是 Python 中 **Explicit is better than implicit** 的哲學，不過其實這還有讓類別動態調用時更為方便的實際意義，這是進階議題，這六個小時的課程中就不談了，有機會看看 Python 的專門書籍，應該都會談到 ...
 
 在類別中還定義了 `__str__`，你應該還記得 〈數值型態〉 中談過 `__str__` 與 `__repr__` 的差別吧？忘記的話，記得回頭複習一下… 在上面的程式中，實際示範了如何在類別中定義 `__str__` 函式。
 
@@ -2413,7 +2411,7 @@ Using ``sorted``
 ```python
 if __name__ == '__main__':
     import doctest
-    doctest.testfile(“util_test.txt")
+    doctest.testfile("util_test.txt")
 ```
 
 你也可以直接執行 `doctest` 模組來載入測試用的文字檔案以執行測試，例如：
@@ -2602,7 +2600,7 @@ python -m unittest -v test_module
 python -m unittest -h
 ```
 
-#### 練習 15：重構與單元測試
+### 練習 15：重構與單元測試
 
 重構是改造既有程式的過程，對於重構的概念與技巧，可以參考 《Refactoring - Improving the Design of Existing Code》 這本書，中文翻譯為 《重構 — 改善既有程式的設計》，[侯捷](http://jjhou.boolan.com/) 老師將 [中文版翻譯的前六章開放下載](http://jjhou.boolan.com/jjtbooks-refactoring.htm)，雖然程式碼示範是使用 Java，不過就重構過程的學習來說，非常值得閱讀：
 
