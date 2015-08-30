@@ -527,7 +527,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 雖然你也可以用 `(1.0 - 0.8).__repr__()`、`(1.0 - 0.8).__str__()` 來取得字串，不過在 Python 中，**底線開頭暗示著你不要直接呼叫或使用**，因此上面的示範中，使用 `repr` 及 `str` 函式來取得字串。日後你繼續學習 Python 語言的過程中，你會知道，`__repr__` 及 `__str__` 是可以自行定義的。
 
-簡單來說，**用 `__repr__` 來傳回沒有岐義的（Unambigous）字串表示，用 `__str__` 來傳回具可讀性的（Readable）字串表示。**
+簡單來說，**用 `__repr__` 來傳回沒有岐義的（Unambiguous）字串表示，用 `__str__` 來傳回具可讀性的（Readable）字串表示。**
 
 想要精確地表示浮點數，語言都會提供程式庫，Python 中使用 `decimal` 模組中的 `Decimal` 類別來進行處理。例如：
 
