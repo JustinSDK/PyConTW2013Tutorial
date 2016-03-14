@@ -1,4 +1,4 @@
-# 關於 Python Tutorial
+# 關於 Python 2 Tutorial
 
 去年 12 初，信箱中出現一封標題為〈PyCon Taiwan 2013 Tutorial Invitation〉的信，在心裡想著這是不是一封廣告信下點進去看，原來是 [Python 年會](http://tw.pycon.org/) 籌備人員 [胡崇偉](http://marrtw.blogspot.tw/) 先生寄來，邀請我協助研討會前一天，提供一整天 6小時的付費 Python 入門課程。
 
@@ -125,7 +125,7 @@
 ----------
 ----------
 
-# Python Tutorial 第一堂
+# Python 2 Tutorial 第一堂
 
 在這個時間點學 Python 表面上有些尷尬，因為必須面臨學習 Python 2.x 或是 Python 3.x 的問題。Python 3.0（也就是 Python 3000，或是 Py3k）在 2008 年 12 月 3 日釋出，它拋棄了與 Python 2.x 的向後相容，但也在語法上改進了許多問題，我沒有很仔細地去比較 Python 2.6、2.7 這兩個版本，不過據稱這兩個版本在某些目的上，是為了讓 Python 可以平順地從 2.x 過渡到 3.x。
 
@@ -163,6 +163,7 @@
 
 之後，執行以下指令安裝 git：
 
+    $ sudo apt-get update
     $ sudo apt-get install git
 
 安裝完成後，可以使用以下指令下載課程資料：
@@ -194,9 +195,13 @@
 
     $ sudo easy_install pip
 
+> Python 3.4 之後預設就有 `pip` 可以使用了。
+
 在安裝 Python 擴充模組時，會需要將某些資料複製至 Python 相關資料夾，也需要一些環境變數等的設定，不同的應用程式可能會需要不同的程式庫版本或相關環境設定，為了方便，可以安裝 virtualenv，它可以讓你很簡易地建立起獨立的 Python 虛擬環境，讓不同的 Python 環境之間彼此互不干擾，這邊使用剛剛安裝好的 `pip` 來安裝 virtualenv：
 
     $ sudo pip install virtualenv
+
+> 從 Python 3.4 開始也開始內建 virtualenv。
 
 到這邊為止，課程環境大致準備好了，安裝過程的畫面，可以參考 [我公開投影片](https://www.slideshare.net/JustinSDK/pycon-taiwan-2013-tutorial)，這邊就不再重複抓圖了。那麼，我們安裝了 Distribute、Pip 以及 Virtualenv，這些東西安裝到哪裏去了？如果我們打算在程式碼中引用某個程式庫，那會是什麼搜尋路徑？
 
@@ -424,7 +429,7 @@ for line in open(sys.argv[1], 'r'):
 ----------
 ----------
 
-# Python Tutorial 第二堂
+# Python 2 Tutorial 第二堂
 
 第二堂上課囉！在知道怎麼撰寫、執行第一個 Python 程式之後，接下來就要瞭解一下 Python 這個程式語言，只不過我們只剩五個小時，因而採取的方式是，在這一個小時很快地瀏覽過 Python 語言的重要基本元素，之後四個小時再從更多實際的範例中瞭解 Python 語言。
 
@@ -846,7 +851,7 @@ while n != 0:
 print 'GCD: {0}'.format(m)
 ```
 
-回頭看看想這個範例：
+回頭看看這個範例：
 
 ```python
 numbers = [10, 20, 30]
@@ -1105,9 +1110,9 @@ print acct
 
 ## 套件
 
-假設現在你有一些 .py 檔案，別人同樣也有一堆 .py 檔案，你們的檔案現在得放在同一專案中，那麼檔案名稱衝突是有可能發生的，最好是為你們的 .py 檔案分別開設目錄。使用 Python 時，你可以在開設的目錄中放個 **__init__.py** 檔案，這樣 Python 就會將這個目錄視為一個套件，而目錄名稱就是套件名稱。
+假設現在你有一些 .py 檔案，別人同樣也有一堆 .py 檔案，你們的檔案現在得放在同一專案中，那麼檔案名稱衝突是有可能發生的，最好是為你們的 .py 檔案分別開設目錄。使用 Python 時，你可以在開設的目錄中放個 **\_\_init\_\_.py** 檔案，這樣 Python 就會將這個目錄視為一個套件，而目錄名稱就是套件名稱。
 
-使用 `import pack.modu` 陳述時，Python 會尋找 pack 目錄，看看裏頭是否有 __init__.py 檔案，然後看看目錄中是否有個 modu.py 檔案。__init__.py 檔案空白也無所謂，實際上當中也可以寫些程式碼，用來執行這個套件中都會需要的初始工作，不過慣例上，除非你有真正不得已的理由，請保持 __init__.py 檔案空白。在找到模組後，實際上會執行其中頂層範疇中的程式碼，之後，模組中的變數、函式、類別等名稱，可以透過 `pack.modu` 來取得。
+使用 `import pack.modu` 陳述時，Python 會尋找 pack 目錄，看看裏頭是否有 \_\_init\_\_.py 檔案，然後看看目錄中是否有個 modu.py 檔案。\_\_init\_\_.py 檔案空白也無所謂，實際上當中也可以寫些程式碼，用來執行這個套件中都會需要的初始工作，不過慣例上，除非你有真正不得已的理由，請保持 \_\_init\_\_.py 檔案空白。在找到模組後，實際上會執行其中頂層範疇中的程式碼，之後，模組中的變數、函式、類別等名稱，可以透過 `pack.modu` 來取得。
 
 ### 練習 5：運用模組、類別與套件來組織程式
 
@@ -1143,7 +1148,7 @@ print acct
 ----------
 ----------
 
-# Python Tutorial 第三堂
+# Python 2 Tutorial 第三堂
 
 認識一門語言，不能只是學習語言的語法，更要逐步深入瞭解語言背後的社群與文化。
 
@@ -1578,7 +1583,7 @@ def all_directors(conn):
 ```python
 db_name = 'dvd_library.sqlite3'
 conn = connect(db_name)
-add_dvd(conn, 'Python Tutorial 2013', 2013, 1, 'Justin')
+add_dvd(conn, 'Python 2 Tutorial 2013', 2013, 1, 'Justin')
 print all_directors(conn)
 print all_dvds(conn)
 ```
@@ -1614,7 +1619,7 @@ print all_dvds(conn)
 ----------
 ----------
 
-# Python Tutorial 第四堂
+# Python 2 Tutorial 第四堂
 
 這堂課開始，我們要來看看如何使用 Python 來撰寫 Web 應用程式，使用的框架（Framework）是 [Django](https://www.djangoproject.com/)。**那麼什麼是框架？它跟程式庫（Library）有何不同？**
 
@@ -1708,7 +1713,7 @@ Tkinter.mainloop()
 
 ### 練習 9：建立 Django 專案
 
-在實際進行這門課程時，使用的 Django 版本是 1.5.1，因而這邊仍固定使用這個版本來示範 … 這邊會建立一個虛擬環境，並透過 `pip` 來安裝 Django，指令如下：
+在實際進行這門課程時，使用的 Django 版本是 1.5.1，因而這邊的示範是以此版本為主 … 這邊會建立一個虛擬環境，並透過 `pip` 來安裝 Django，指令如下：
 
 ```
 ~/scripts$ virtualenv --distribute venv
@@ -1721,6 +1726,8 @@ Tkinter.mainloop()
 ~/scripts/venv$ cd mysite
 ~/scripts/venv$ python manage.py runserver
 ```
+
+> 在 2016 年 1 月為某單位準備此課程時，執行 `pip install Django==1.5.1` 與 `django-admin.py startproject mysite` 後，mysite 中沒有 manage.py，安裝 Django 1.6.11 就無此問題。
 
 指令中透過 `django-admin.py startproject mysite` 建立了一個 Django 專案為 mysite，完成 `python manage.py runserver` 指令後，你應該會看到 Django 開發時的簡單伺服器啟動了 …
 
@@ -1786,7 +1793,7 @@ class Choice(models.Model):
     def __unicode__(self):
         return self.choice_text
 ```
-這建立了兩個資料模型 `Poll` 與 `Choice`，`Poll` 中有 `question` 與 `pub_date` 兩個欄位，代表想問題描述與發佈日期，`was_published_recently` 方法用來判斷，這個問題是不是最近一日內新發佈的，`__unicode__` 用來傳回 Poll 實例的字串說明。`Choice` 則用來記錄投票選項，`poll` 關聯至問題（`Choice` 實例），`choice_text` 是該問題的選項文字，`votes` 是投票數。
+這建立了兩個資料模型 `Poll` 與 `Choice`，`Poll` 中有 `question` 與 `pub_date` 兩個欄位，代表想問題描述與發佈日期，`was_published_recently` 方法用來判斷，這個問題是不是最近一日內新發佈的，`__unicode__` 用來傳回 Poll 實例的字串說明。`Choice` 則用來記錄投票選項，`poll` 關聯至問題（`Poll` 實例），`choice_text` 是該問題的選項文字，`votes` 是投票數。
 
 這個 app 剛建立，你必須讓目前專案知道，這要在 mysite/settings.py 中設定，找到其中的 `'INSTALLED_APPS'`，在最後加入 `'polls'`：
 
@@ -1937,7 +1944,7 @@ Django 中呼叫哪個 view，是由 Python 的 URLconf（非正式名稱）模�
 ----------
 ----------
 
-# Python Tutorial 第五堂
+# Python 2 Tutorial 第五堂
 
 在上一堂課結束前，我們在 polls/views.py 中撰寫回應結果，雖然概念上 polls/views.py 是屬於 View 的一部份，不過實際的畫面組織不建議撰寫在這當中，想想看，如果你想要 HTML 輸出，那麼直接在 polls/views.py 中撰寫 HTML 輸出，程式碼與 HTML 糾結在一起，會是什麼樣的混亂結果。
 
@@ -2457,9 +2464,9 @@ if __name__ == '__main__':
 ----------
 ----------
 
-# Python Tutorial 第六堂
+# Python 2 Tutorial 第六堂
 
-Python Tutorial 的第六堂課要接續上一堂結束前談到的測試，來看看 `unittest` 模組，接著看看簡單的效能評測（Profile）工具，像是 `timeit`、`cProfile` 與 `pstats` 等。
+Python 2 Tutorial 的第六堂課要接續上一堂結束前談到的測試，來看看 `unittest` 模組，接著看看簡單的效能評測（Profile）工具，像是 `timeit`、`cProfile` 與 `pstats` 等。
 
 ## 使用 `unittest` 單元測試
 
@@ -2610,13 +2617,9 @@ python -m unittest -h
 
 我們要重構的是 `Customer` 類別中的 `statement` 方法，流程則是彷造該書 〈1.3 分解並重構 `statement`〉 的內容，為了確保重構過程中，不會破壞既有程式的功能，我們要使用 `unittest` 模組來進行單元測試。
 
-重構之前的類別圖是這樣的：
+重構前後的類別圖是這樣的：
 
 ![影片出租站範例重構前類別圖](images/python-tutorial-the-6th-class-1-3.png)
-
-重構之後的類別圖則是：
-
-![影片出租站範例重構後類別圖](images/python-tutorial-the-6th-class-1-4.png)
 
 別忘了，你得在每次的重構之前，先寫好測試，重構後執行測試，確保你沒有破壞了什麼，練習的過程中你會發現，因為有測試確保了功能不破壞，你會更有信心進行重構。
 
@@ -2735,29 +2738,12 @@ cProfile.run('sorting.selectionSort(l)')
 
 這當中有一些欄位需要解釋一下：
 
-- ncalls
-    
-    "number of calls" 的縮寫，也就是對特定函式的呼叫次數。
-
-- tottime
-
-    "total time" 的縮寫，花費在函式上的執行時間（不包括子函數呼叫的時間）。
-
-- percall
-
-    tottime / ncalls 的結果。
-
-- cumtime
-
-    "cumulative time" 的縮寫，花費在函式與所有子函式的時間（從呼叫至離開）。
-
-- percall
-
-    cumtime / ncalls 的結果。
-
-- filename:lineno(function)
-
-    提供程式碼執行時的位置資訊。
+- ncalls - "number of calls" 的縮寫，也就是對特定函式的呼叫次數。
+- tottime - "total time" 的縮寫，花費在函式上的執行時間（不包括子函數呼叫的時間）。
+- percall - tottime / ncalls 的結果。
+- cumtime - "cumulative time" 的縮寫，花費在函式與所有子函式的時間（從呼叫至離開）。
+- percall - cumtime / ncalls 的結果。
+- filename:lineno(function) - 提供程式碼執行時的位置資訊。
 
 ## 使用 `pstats`
 
